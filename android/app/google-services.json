@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "105662906713",
+    "project_id": "nysc-single-camp-template",
+    "storage_bucket": "nysc-single-camp-template.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105662906713:android:d7898fd539fa87af808c48",
+        "android_client_info": {
+          "package_name": "icdatinnovations.com.nysc_camp_platoon_single"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105662906713-mafmb64fjdot164fnbisu6npo3he0hs9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "icdatinnovations.com.nysc_camp_platoon_single",
+            "certificate_hash": "35a7de7f844c9b3817d4f98afe7048aeb8437cef"
+          }
+        },
+        {
+          "client_id": "105662906713-lbd2l48dusg6ilrg5479sejvo90mqh88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmR2zF8lQsTI-0mcmvz6u4tuy7XB2Pq0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105662906713-lbd2l48dusg6ilrg5479sejvo90mqh88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
