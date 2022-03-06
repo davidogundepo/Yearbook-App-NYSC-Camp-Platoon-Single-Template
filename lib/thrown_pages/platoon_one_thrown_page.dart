@@ -325,6 +325,7 @@ class _MyPlatoonOnePageState extends State<MyPlatoonOnePage> {
                                                   color: textColor
                                               ),),
                                             onTap: () {
+                                              Navigator.of(context).pop(false);
                                               navigateToWhoWeArePage(context);
                                             }
                                         ),
@@ -335,6 +336,7 @@ class _MyPlatoonOnePageState extends State<MyPlatoonOnePage> {
                                                 color: textColor
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToAboutCamp(context);
                                           },
                                         ),
@@ -345,6 +347,7 @@ class _MyPlatoonOnePageState extends State<MyPlatoonOnePage> {
                                                 color: textColor
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToAboutNYSCFederalState(context);
                                           },
                                         ),
@@ -355,6 +358,7 @@ class _MyPlatoonOnePageState extends State<MyPlatoonOnePage> {
                                                   color: textColor
                                               ),),
                                             onTap: () {
+                                              Navigator.of(context).pop(false);
                                               navigateToAcronymsMeaningsPage(context);
                                             }
                                         ),
@@ -365,6 +369,7 @@ class _MyPlatoonOnePageState extends State<MyPlatoonOnePage> {
                                                 color: textColor
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToAboutAppDetailsPage(context);
                                           },
                                         ),
@@ -400,7 +405,7 @@ class _MyPlatoonOnePageState extends State<MyPlatoonOnePage> {
                       heightFactor: 0.6,
                       child: Text(
                           thrownName,
-                          style: GoogleFonts.amaticSC(
+                          style: GoogleFonts.abel(
                               color: appBarTextColor,
                               fontSize: 26.0,
                               fontWeight: FontWeight.bold

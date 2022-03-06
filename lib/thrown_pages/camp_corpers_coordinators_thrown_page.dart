@@ -106,7 +106,7 @@ class _MyCampCorpersCoordinatorsPageState extends State<MyCampCorpersCoordinator
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 60),
+                    padding: const EdgeInsets.only(left: 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -269,6 +269,7 @@ class _MyCampCorpersCoordinatorsPageState extends State<MyCampCorpersCoordinator
                                                 color: textColor
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToWhoWeArePage(context);
                                           }
                                       ),
@@ -280,6 +281,7 @@ class _MyCampCorpersCoordinatorsPageState extends State<MyCampCorpersCoordinator
                                               color: textColor
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutCamp(context);
                                         },
                                       ),
@@ -291,6 +293,7 @@ class _MyCampCorpersCoordinatorsPageState extends State<MyCampCorpersCoordinator
                                               color: textColor
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutNYSCFederalState(context);
                                         },
                                       ),
@@ -302,6 +305,7 @@ class _MyCampCorpersCoordinatorsPageState extends State<MyCampCorpersCoordinator
                                                 color: textColor
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
@@ -313,6 +317,7 @@ class _MyCampCorpersCoordinatorsPageState extends State<MyCampCorpersCoordinator
                                               color: textColor
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
@@ -347,7 +352,7 @@ class _MyCampCorpersCoordinatorsPageState extends State<MyCampCorpersCoordinator
                         heightFactor: 0.6,
                         child: Text(
                             thrownName,
-                            style: GoogleFonts.amaticSC(
+                            style: GoogleFonts.abel(
                                 color: textColor,
                                 fontSize: 26.0,
                                 fontWeight: FontWeight.bold

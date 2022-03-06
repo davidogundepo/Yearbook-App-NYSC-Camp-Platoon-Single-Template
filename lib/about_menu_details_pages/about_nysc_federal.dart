@@ -117,7 +117,7 @@ Color containerColor = Colors.blueGrey.withAlpha(50);
 Color containerTextColor = Colors.white.withAlpha(110);
 Color containerColor2 = Colors.blueGrey;
 Color chartBackgroundColor = Colors.grey[200];
-Color chartTextColor = Colors.white;
+Color chartTextColor = Color.fromRGBO(25, 49, 111, 1);
 Color chartTextColorTwo = Color.fromRGBO(25, 49, 111, 1);
 Color firstFederalNYSCChartColor = Colors.white.withAlpha(110);
 Color secondFederalNYSCChartColor = Color.fromRGBO(25, 49, 111, 1);
@@ -480,7 +480,7 @@ class _AboutNYSCFederalState extends State<AboutNYSCFederalState> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
               child: Container(
-                height: 250,
+                height: 350,
                 decoration: BoxDecoration(
                     color: containerColor,
                     borderRadius: new BorderRadius.circular(10)
@@ -507,27 +507,34 @@ class _AboutNYSCFederalState extends State<AboutNYSCFederalState> {
                                 )),
                           ),
                           PieChart(
-                            legendStyle: TextStyle(
-                              color: containerTextColor,
-                            ),
                             dataMap: federalNYSCMap,
-                            animationDuration: Duration(seconds: 10),
-                            chartLegendSpacing: 42.0,
+                            animationDuration: Duration(milliseconds: 8000),
+                            chartLegendSpacing: 22,
                             chartRadius: MediaQuery.of(context).size.width / 2.7,
-                            showChartValuesInPercentage: false,
-                            showChartValues: true,
-                            showChartValuesOutside: false,
-                            chartValueBackgroundColor: containerTextColor,
                             colorList: federalNYSCColorList,
-                            showLegends: true,
-                            legendPosition: LegendPosition.right,
-                            decimalPlaces: 0,
-                            showChartValueLabel: true,
-                            initialAngle: 0,
-                            chartValueStyle: defaultChartValueStyle.copyWith(
-                              color: chartTextColor,
-                            ),
+                            initialAngleInDegree: 0,
                             chartType: ChartType.disc,
+                            legendOptions: LegendOptions(
+                              showLegendsInRow: false,
+                              legendPosition: LegendPosition.bottom,
+                              showLegends: true,
+                              legendShape: BoxShape.circle,
+                              legendTextStyle: TextStyle(
+                                color: containerTextColor,
+                              ),
+                            ),
+                            chartValuesOptions: ChartValuesOptions(
+                              showChartValueBackground: true,
+                              showChartValues: true,
+                              // showChartValueLabel: true,
+                              chartValueStyle: defaultChartValueStyle.copyWith(
+                                color: chartTextColor
+                              ),
+                              showChartValuesInPercentage: false,
+                              showChartValuesOutside: false,
+                              decimalPlaces: 0,
+                              chartValueBackgroundColor: chartBackgroundColor,
+                            ),
                           ),
                         ],
                       ),
@@ -584,7 +591,7 @@ class _AboutNYSCFederalState extends State<AboutNYSCFederalState> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
               child: Container(
-                height: 270,
+                height: 340,
                 decoration: BoxDecoration(
                     color: containerColor,
                     borderRadius: new BorderRadius.circular(10)
@@ -611,27 +618,34 @@ class _AboutNYSCFederalState extends State<AboutNYSCFederalState> {
                                 )),
                           ),
                           PieChart(
-                            legendStyle: TextStyle(
-                              color: containerTextColor,
-                            ),
                             dataMap: federalNYSCCorpMemberMap,
-                            animationDuration: Duration(seconds: 10),
-                            chartLegendSpacing: 42.0,
+                            animationDuration: Duration(milliseconds: 8000),
+                            chartLegendSpacing: 22,
                             chartRadius: MediaQuery.of(context).size.width / 2.7,
-                            showChartValuesInPercentage: false,
-                            showChartValues: true,
-                            showChartValuesOutside: false,
-                            chartValueBackgroundColor: chartBackgroundColor,
                             colorList: federalNYSCCorpMemberColorList,
-                            showLegends: true,
-                            legendPosition: LegendPosition.right,
-                            decimalPlaces: 0,
-                            showChartValueLabel: true,
-                            initialAngle: 0,
-                            chartValueStyle: defaultChartValueStyle.copyWith(
-                              color: chartTextColorTwo.withAlpha(160),
-                            ),
+                            initialAngleInDegree: 0,
                             chartType: ChartType.ring,
+                            legendOptions: LegendOptions(
+                              showLegendsInRow: false,
+                              legendPosition: LegendPosition.bottom,
+                              showLegends: true,
+                              legendShape: BoxShape.circle,
+                              legendTextStyle: TextStyle(
+                                color: containerTextColor,
+                              ),
+                            ),
+                            chartValuesOptions: ChartValuesOptions(
+                              showChartValueBackground: true,
+                              showChartValues: true,
+                              // showChartValueLabel: true,
+                              chartValueStyle: defaultChartValueStyle.copyWith(
+                                color: chartTextColorTwo.withAlpha(160)
+                              ),
+                              showChartValuesInPercentage: false,
+                              showChartValuesOutside: false,
+                              decimalPlaces: 0,
+                              chartValueBackgroundColor: chartBackgroundColor,
+                            ),
                           ),
                         ],
                       ),

@@ -121,6 +121,7 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
             children: <Widget>[
               Expanded(
                 child: Card(
+                  color: linearGradientColor,
                   elevation: 20,
                   margin: EdgeInsets.all(0),
                   child: Align(

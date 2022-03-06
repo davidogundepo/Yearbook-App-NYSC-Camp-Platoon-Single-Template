@@ -9,7 +9,7 @@ import 'package:provider/provider.dart';
 
 
 String platoonTitle = "Nysc Platoon\n";
-String positionEnforcedTitle = "Position Enforced\n";
+String positionEnforcedTitle = "Position Enforced\n\n";
 
 Color backgroundColor = Color.fromRGBO(123, 176, 182, 1);
 Color appBarBackgroundColor = Color.fromRGBO(123, 166, 182, 1);
@@ -195,7 +195,7 @@ class _CampCorpersCoordinatorsDetailsPageState extends State<CampCorpersCoordina
                                 TextSpan(
                                   children: <TextSpan>[
                                     TextSpan(
-                                        text: platoonTitle,
+                                        text: positionEnforcedTitle,
                                         style: GoogleFonts.aBeeZee(
                                           color: textColor,
                                           fontSize: 19,
@@ -203,7 +203,7 @@ class _CampCorpersCoordinatorsDetailsPageState extends State<CampCorpersCoordina
                                         )
                                     ),
                                     TextSpan(
-                                        text: ' '+campCorpersCoordinatorsNotifier.currentCampCorpersCoordinators.platoon,
+                                        text: ' '+campCorpersCoordinatorsNotifier.currentCampCorpersCoordinators.positionEnforced,
                                         style: GoogleFonts.trykker(
                                           color: textColor,
                                           fontSize: 19,
@@ -220,48 +220,6 @@ class _CampCorpersCoordinatorsDetailsPageState extends State<CampCorpersCoordina
                         decoration: BoxDecoration(
                             color: shapeDecorationColor.withAlpha(120),
                             borderRadius: new BorderRadius.circular(10)
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 20.0),
-                        child: Container(
-                          child: Material(
-                            color: materialBackgroundColor,
-                            child: InkWell(
-                              splashColor: splashColorTwo,
-                              onTap: () {},
-                              child: Padding(
-                                padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
-                                child: Text.rich(
-                                  TextSpan(
-                                    children: <TextSpan>[
-                                      TextSpan(
-                                          text: positionEnforcedTitle,
-                                          style: GoogleFonts.aBeeZee(
-                                            color: textColor,
-                                            fontSize: 19,
-                                            fontWeight: FontWeight.bold,
-                                          )
-                                      ),
-                                      TextSpan(
-                                          text: ' '+campCorpersCoordinatorsNotifier.currentCampCorpersCoordinators.positionEnforced,
-                                          style: GoogleFonts.trykker(
-                                            color: textColor,
-                                            fontSize: 19,
-                                            fontWeight: FontWeight.w300,
-                                          )
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-
-                          decoration: BoxDecoration(
-                              color: shapeDecorationColor.withAlpha(120),
-                              borderRadius: new BorderRadius.circular(10)
-                          ),
                         ),
                       ),
                     ],

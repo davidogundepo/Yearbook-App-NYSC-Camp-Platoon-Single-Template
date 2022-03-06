@@ -576,7 +576,7 @@ class _CampOfficialsDetailsPageState extends State<CampOfficialsDetailsPage> {
                       elevation: 2,
                       color: buttonColor,
                       icon: new Icon(
-                        MdiIcons.twitterCircle,
+                        MdiIcons.twitter,
                         color: iconTextColor,
                       ),
                       label: Text(twitterButton,
@@ -609,7 +609,7 @@ class _CampOfficialsDetailsPageState extends State<CampOfficialsDetailsPage> {
                         elevation: 2,
                         color: buttonColor,
                         icon: new Icon(
-                          MdiIcons.twitterCircle,
+                          MdiIcons.twitter,
                           color: iconTextColor,
                         ),
                         label: Text(twitterButton,
@@ -646,8 +646,6 @@ class _CampOfficialsDetailsPageState extends State<CampOfficialsDetailsPage> {
                         style: GoogleFonts.abel(
                             color: iconTextColor,
                             fontSize: 18,
-                            decoration: TextDecoration.underline,
-                            decorationStyle: TextDecorationStyle.dashed,
                             fontWeight: FontWeight.w300),
                       ),
                       onPressed: () {

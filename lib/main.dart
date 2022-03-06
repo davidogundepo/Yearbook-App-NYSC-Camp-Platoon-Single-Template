@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -15,40 +17,39 @@ import 'notifier/federal_arial_notifier.dart';
 import 'notifier/sidebar_notifier.dart';
 
 void main() async {
-
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
   FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
+  runZonedGuarded(() {
+    runApp(MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => PlatoonOneNotifier(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => CampCorpersCoordinatorsNotifier(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => CampOfficialsNotifier(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => CampArialNotifier(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => FederalAchievementsNotifier(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => FederalArialNotifier(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => SideBarNotifier(),
+        ),
 
-  runApp(
-      MultiProvider(
-        providers: [
-          ChangeNotifierProvider(
-            create: (context) => PlatoonOneNotifier(),
-          ),
-          ChangeNotifierProvider(
-            create: (context) => CampCorpersCoordinatorsNotifier(),
-          ),
-          ChangeNotifierProvider(
-            create: (context) => CampOfficialsNotifier(),
-          ),
-          ChangeNotifierProvider(
-            create: (context) => CampArialNotifier(),
-          ),
-          ChangeNotifierProvider(
-            create: (context) => FederalAchievementsNotifier(),
-          ),
-          ChangeNotifierProvider(
-            create: (context) => FederalArialNotifier(),
-          ),
-          ChangeNotifierProvider(
-            create: (context) => SideBarNotifier(),
-          ),
-
-        ],
-        child: MyApp(),
-      )
+      ],
+      child: MyApp(),
+    ));
+    }, FirebaseCrashlytics.instance.recordError
   );
 }
 

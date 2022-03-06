@@ -15,8 +15,8 @@ abstract class NavigationStates {}
 
 
 class NavigationBloc extends Bloc<NavigationEvents, NavigationStates> {
-  @override
-  NavigationStates get initialState => MyPlatoonOnePage();
+
+  NavigationBloc() : super(MyPlatoonOnePage());
 
   @override
   Stream<NavigationStates> mapEventToState(NavigationEvents events) async* {
