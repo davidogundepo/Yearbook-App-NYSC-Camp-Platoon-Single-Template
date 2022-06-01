@@ -8,18 +8,18 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:provider/provider.dart';
 
 
-Color backgroundColor = Color.fromRGBO(167, 129, 29, 1);
+Color backgroundColor = Color.fromRGBO(132, 147, 177, 1.0);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(167, 119, 29, 1);
+Color appBarBackgroundColor = Color.fromRGBO(132, 147, 177, 1.0);
 Color appBarIconColor = Colors.white;
-Color modalColor = Color.fromRGBO(167, 119, 29, 1);
+Color modalColor = Color.fromRGBO(132, 147, 177, 1.0);
 Color modalBackgroundColor = Colors.transparent;
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Color.fromRGBO(167, 119, 29, 1);
+Color splashColor = Color.fromRGBO(132, 147, 177, 1.0);
 Color iconColor = Colors.white;
 Color textColor = Colors.white;
-Color dialogBackgroundColor = Color.fromRGBO(167, 129, 29, 1);
+Color dialogBackgroundColor = Color.fromRGBO(132, 147, 177, 1.0);
 Color borderColor = Colors.black;
 Color textHighlightColor = Colors.white;
 

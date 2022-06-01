@@ -42,25 +42,25 @@ double femaleCampCorperPopulation = 22;
 double campStaffPopulation = 42;
 
 
-Color backgroundColor = Colors.blueGrey[900];
-Color appBarBackgroundColor = Colors.blueGrey[800];
-Color appBarIconColor = Colors.blueGrey;
-Color appBarBackgroundTextColor = Colors.blueGrey;
-Color cardBackgroundColor = Colors.black38;
-Color cardTextColor = Colors.blueGrey;
+Color backgroundColor = Color.fromRGBO(34, 87, 126, 1.0);
+Color appBarBackgroundColor = Color.fromRGBO(34, 87, 126, 1);
+Color appBarIconColor = Colors.white70;
+Color appBarBackgroundTextColor = Colors.white70;
+Color cardBackgroundColor = Color.fromRGBO(12, 49, 74, 1.0);
+Color cardTextColor = Colors.white70;
 Color materialColor = Colors.transparent;
-Color materialInkWellColor = Colors.blueGrey;
-Color materialTextColor = Colors.blueGrey;
-Color containerColor = Colors.blueGrey.withAlpha(50);
-Color containerTextColor = Colors.blueGrey[900];
-Color containerColor2 = Colors.blueGrey;
-Color chartBackgroundColor = Colors.blueGrey[200];
-Color chartTextColor = Colors.blueGrey[900].withOpacity(0.9);
-Color firstCampCorperChartColor = Color.fromRGBO(145, 172, 179, 1).withAlpha(160);
-Color secondCampCorperChartColor = Color.fromRGBO(184, 186, 181, 1);
-Color firstCampBodyChartColor = Color.fromRGBO(145, 172, 179, 1).withAlpha(160);
-Color secondCampBodyChartColor = Color.fromRGBO(184, 186, 181, 1);
-Color thirdCampBodyChartColor = Color.fromRGBO(44, 99, 117, 1.0);
+Color materialInkWellColor = Color.fromRGBO(50, 106, 152, 1.0);
+Color materialTextColor = Colors.white70;
+Color containerColor = Color.fromRGBO(50, 106, 152, 1.0);
+Color containerTextColor = Colors.white70;
+Color containerColor2 = Color.fromRGBO(50, 106, 152, 1.0);
+Color chartBackgroundColor = Color.fromRGBO(21, 65, 93, 1.0);
+Color chartTextColor = Colors.white70;
+Color firstCampCorperChartColor = Color.fromRGBO(34, 87, 126, 1);
+Color secondCampCorperChartColor = Color.fromRGBO(21, 65, 93, 1.0);
+Color firstCampBodyChartColor = Color.fromRGBO(34, 87, 126, 1);
+Color secondCampBodyChartColor = Color.fromRGBO(21, 65, 93, 1.0);
+Color thirdCampBodyChartColor = Color.fromRGBO(12, 49, 74, 1.0);
 
 
 class AboutCamp extends StatefulWidget {
@@ -517,7 +517,7 @@ class _AboutCamp extends State<AboutCamp> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
               child: Container(
-                height: 350,
+                height: 380,
                 decoration: BoxDecoration(
                     color: containerColor,
                     borderRadius: new BorderRadius.circular(10)
@@ -626,6 +626,7 @@ class _AboutCamp extends State<AboutCamp> {
             Container(
               height: 340,
               child: Swiper(
+                autoplay: true,
                 viewportFraction: 0.8,
                 scale: 0.9,
                 itemCount: campArialNotifier.campArialList.length,

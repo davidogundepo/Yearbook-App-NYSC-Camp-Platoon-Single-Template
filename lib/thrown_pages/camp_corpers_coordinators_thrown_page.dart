@@ -39,19 +39,19 @@ String imgAsset = "assets/images/fin_inc_1.jpg";
 
 
 
-Color backgroundColor = Color.fromRGBO(123, 176, 182, 1);
+Color backgroundColor = Color.fromRGBO(81, 93, 117, 1.0);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(123, 166, 182, 1);
+Color appBarBackgroundColor = Color.fromRGBO(81, 93, 117, 1.0);
 Color appBarIconColor = Colors.white;
-Color modalColor = Color.fromRGBO(123, 166, 182, 1);
+Color modalColor = Color.fromRGBO(81, 93, 117, 1.0);
 Color modalBackgroundColor = Colors.transparent;
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Color.fromRGBO(123, 166, 182, 1);
+Color splashColor = Color.fromRGBO(81, 93, 117, 1.0);
 Color iconColor = Colors.white;
 Color textColor = Colors.white;
-Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(123, 176, 182, 1);
+Color textColorTwo = Colors.white;
+Color dialogBackgroundColor = Color.fromRGBO(81, 93, 117, 1.0);
 Color borderColor = Colors.black;
 
 

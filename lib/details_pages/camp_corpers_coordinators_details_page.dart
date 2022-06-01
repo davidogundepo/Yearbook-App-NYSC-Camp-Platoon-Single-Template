@@ -11,16 +11,17 @@ import 'package:provider/provider.dart';
 String platoonTitle = "Nysc Platoon\n";
 String positionEnforcedTitle = "Position Enforced\n\n";
 
-Color backgroundColor = Color.fromRGBO(123, 176, 182, 1);
-Color appBarBackgroundColor = Color.fromRGBO(123, 166, 182, 1);
-Color appBarIconColor = Colors.blueGrey;
-Color materialBackgroundColor = Colors.transparent;
-Color shapeDecorationColor = Color.fromRGBO(123, 166, 182, 1);
+Color backgroundColor = Color.fromRGBO(81, 93, 117, 1.0);
+Color appBarBackgroundColor = Color.fromRGBO(81, 93, 117, 1.0);
+Color appBarIconColor = Color.fromRGBO(132, 147, 177, 1.0);
+Color materialBackgroundColor = Color.fromRGBO(81, 93, 117, 1.0);
+Color shapeDecorationColor = Color.fromRGBO(132, 147, 177, 1.0);
 Color shapeDecorationTextColor = Colors.white;
 Color shapeDecorationIconColor = Colors.white;
-Color cardBackgroundColor = Colors.blueGrey;
-Color splashColor = Color.fromRGBO(123, 166, 182, 1);
-Color splashColorTwo = Colors.white;
+Color cardBackgroundColor = Color.fromRGBO(132, 147, 177, 1.0);
+Color cardBackgroundColorTwo = Color.fromRGBO(59, 68, 88, 1.0);
+Color splashColor = Color.fromRGBO(132, 147, 177, 1.0);
+Color splashColorTwo = Color.fromRGBO(132, 147, 177, 1.0);
 Color iconTextColor = Colors.white;
 Color textColor = Colors.white;
 Color confettiColorOne = Colors.green;
@@ -170,7 +171,7 @@ class _CampCorpersCoordinatorsDetailsPageState extends State<CampCorpersCoordina
               ),
               Card(
                 elevation: 5,
-                color: cardBackgroundColor,
+                color: cardBackgroundColorTwo,
                 margin: EdgeInsets.all(10),
                 semanticContainer: true,
                 clipBehavior: Clip.antiAliasWithSaveLayer,

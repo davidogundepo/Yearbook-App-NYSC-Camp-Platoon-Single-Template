@@ -22,7 +22,7 @@
     </queries>
 
     <application
-        android:label="nysc_camp_platoon_single"
+        android:label="NG NYSC CAMP 1"
         android:icon="@mipmap/ic_launcher"
         android:extractNativeLibs="true"
         android:name="${applicationName}"
@@ -30,6 +30,7 @@
         android:allowBackup="true">
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/NormalTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

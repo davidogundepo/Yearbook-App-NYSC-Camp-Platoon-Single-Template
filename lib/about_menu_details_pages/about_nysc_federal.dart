@@ -103,27 +103,27 @@ double staffPopulation = 4054;
 
 
 
-Color backgroundColor = Color.fromRGBO(25, 59, 111, 1);
-Color appBarBackgroundColor = Color.fromRGBO(25, 49, 111, 1);
-Color appBarIconColor = Colors.blueGrey;
-Color appBarBackgroundTextColor = Colors.blueGrey;
-Color cardBackgroundColor = Color.fromRGBO(25, 49, 111, 1);
-Color textColor = Color.fromRGBO(25, 49, 111, 1);
-Color cardTextColor = Colors.blueGrey;
+Color backgroundColor = Color.fromRGBO(20, 40, 80, 1);
+Color appBarBackgroundColor = Color.fromRGBO(20, 40, 80, 1);
+Color appBarIconColor = Color.fromRGBO(91, 118, 172, 1.0);
+Color appBarBackgroundTextColor = Color.fromRGBO(91, 118, 172, 1.0);
+Color cardBackgroundColor = Color.fromRGBO(10, 24, 52, 1.0);
+Color textColor = Color.fromRGBO(91, 118, 172, 1.0);
+Color cardTextColor = Color.fromRGBO(91, 118, 172, 1.0);
 Color materialColor = Colors.transparent;
-Color materialInkWellColor = Colors.blue.withAlpha(80);
-Color materialTextColor = Colors.blueGrey;
-Color containerColor = Colors.blueGrey.withAlpha(50);
-Color containerTextColor = Colors.white.withAlpha(110);
-Color containerColor2 = Colors.blueGrey;
-Color chartBackgroundColor = Colors.grey[200];
-Color chartTextColor = Color.fromRGBO(25, 49, 111, 1);
-Color chartTextColorTwo = Color.fromRGBO(25, 49, 111, 1);
-Color firstFederalNYSCChartColor = Colors.white.withAlpha(110);
-Color secondFederalNYSCChartColor = Color.fromRGBO(25, 49, 111, 1);
-Color thirdFederalNYSCChartColor = Colors.lightBlue;
-Color firstFederalNYSCCorpMemberChartColor = Color.fromRGBO(25, 49, 111, 1);
-Color secondFederalNYSCCorpMemberChartColor = Color.fromRGBO(184, 186, 181, 1);
+Color materialInkWellColor = Color.fromRGBO(91, 118, 172, 1.0);
+Color materialTextColor = Color.fromRGBO(91, 118, 172, 1.0);
+Color containerColor = Color.fromRGBO(28, 48, 88, 1.0);
+Color containerTextColor = Color.fromRGBO(91, 118, 172, 1.0);
+Color containerColor2 = Color.fromRGBO(28, 48, 88, 1.0);
+Color chartBackgroundColor = Color.fromRGBO(91, 118, 172, 1.0);
+Color chartTextColor = Color.fromRGBO(7, 22, 53, 1.0);
+Color chartTextColorTwo = Color.fromRGBO(7, 22, 53, 1.0);
+Color firstFederalNYSCChartColor = Color.fromRGBO(7, 22, 53, 1.0);
+Color secondFederalNYSCChartColor = Color.fromRGBO(20, 40, 80, 1);
+Color thirdFederalNYSCChartColor = Color.fromRGBO(4, 16, 41, 1.0);
+Color firstFederalNYSCCorpMemberChartColor = Color.fromRGBO(7, 22, 53, 1.0);
+Color secondFederalNYSCCorpMemberChartColor = Color.fromRGBO(7, 22, 53, 1.0);
 
 class AboutNYSCFederalState extends StatefulWidget {
 
@@ -1173,6 +1173,7 @@ class _AboutNYSCFederalState extends State<AboutNYSCFederalState> {
             Container(
               height: 340,
               child: Swiper(
+                autoplay: true,
                 viewportFraction: 0.8,
                 scale: 0.9,
                 itemCount: federalArialNotifier.federalArialList.length,
@@ -1259,6 +1260,7 @@ class _AboutNYSCFederalState extends State<AboutNYSCFederalState> {
             Container(
               height: 340,
               child: Swiper(
+                autoplay: true,
                 viewportFraction: 0.8,
                 scale: 0.9,
                 itemCount: federalAchievementsNotifier.federalAchievementsList.length,
@@ -1370,7 +1372,7 @@ Map<String, double> federalNYSCMap = Map();
 Map<String, double> federalNYSCCorpMemberMap = Map();
 
 List<Color> federalNYSCColorList = [
-  containerTextColor,
+  firstFederalNYSCChartColor,
   secondFederalNYSCChartColor,
   thirdFederalNYSCChartColor,
 ];
