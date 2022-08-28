@@ -812,7 +812,7 @@ class _PlatoonOneDetailsPageState extends State<PlatoonOneDetailsPage> {
                       elevation: 2,
                       color: buttonColor,
                       icon: new Icon(
-                        MdiIcons.telegram,
+                        MdiIcons.checkAll,
                         color: iconTextColorTwo,
                       ),
                       label: Text(telegramButton,
@@ -845,7 +845,7 @@ class _PlatoonOneDetailsPageState extends State<PlatoonOneDetailsPage> {
                         elevation: 2,
                         color: buttonColor,
                         icon: new Icon(
-                          MdiIcons.telegram,
+                          MdiIcons.checkAll,
                           color: iconTextColorTwo,
                         ),
                         label: Text(telegramButton,
@@ -3113,10 +3113,10 @@ class _PlatoonOneDetailsPageState extends State<PlatoonOneDetailsPage> {
             onPressed: () {
               launchURL(urlFacebook);
               Toast.show("Loading up Facebook.com",
-                  context, duration:
-                  Toast.LENGTH_LONG,
-                  gravity:  Toast.BOTTOM,
-                  textColor: cardBackgroundColor,
+                  duration:
+                  Toast.lengthLong,
+                  gravity:  Toast.bottom,
+                  webTexColor: cardBackgroundColor,
                   backgroundColor: backgroundColor,
                   backgroundRadius: 10
               );
@@ -3170,10 +3170,10 @@ class _PlatoonOneDetailsPageState extends State<PlatoonOneDetailsPage> {
             onPressed: () {
               launchURL(urlLinkedIn);
               Toast.show("Loading up LinkedIn.com",
-                  context, duration:
-                  Toast.LENGTH_LONG,
-                  gravity:  Toast.BOTTOM,
-                  textColor: cardBackgroundColor,
+                  duration:
+                  Toast.lengthLong,
+                  gravity:  Toast.bottom,
+                  webTexColor: cardBackgroundColor,
                   backgroundColor: backgroundColor,
                   backgroundRadius: 10
               );

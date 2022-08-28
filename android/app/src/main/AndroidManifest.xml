@@ -22,7 +22,7 @@
     </queries>
 
     <application
-        android:label="NG NYSC CAMP 1"
+        android:label="NYSC Single Platoon"
         android:icon="@mipmap/ic_launcher"
         android:extractNativeLibs="true"
         android:name="${applicationName}"
